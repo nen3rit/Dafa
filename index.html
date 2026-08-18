@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="overflow-hidden">
+<body class="overflow-hidden roboto-normal">
      <!-- NAVBAR STYLING -->
-    <header class="sticky border-b border-[#e5e5e5] backdrop-blur-md roboto-normal">
+    <header class="sticky border-b border-[#e5e5e5] backdrop-blur-md">
         <div class="mx-auto flex justify-between items-center px-6 py-2">
             <!-- LOGO -->
             <a href="#">
@@ -32,72 +32,50 @@
             </div>
         </div>
     </header>
-    <div></div>
-
-    
-    <!-- FOOTER -->
-    <!-- <footer class="bg-gray-50 border-t border-gray-200 py-12 text-sm text-gray-600">
-  <div class="mx-auto max-w-7xl px-6">
-    <div class="grid grid-cols-1 gap-8 md:grid-cols-4">
-      
-      
-      <div class="md:col-span-1">
-        <h3 class="text-base font-semibold text-gray-900">Get cooking inspiration delivered every week.</h3>
-        <p class="mt-1 text-xs text-gray-500">Busy schedule? Get a weekly recipe recap every Sunday.</p>
-        <form class="mt-4 flex max-w-sm gap-2">
-          <input 
-            type="email" 
-            placeholder="Your email" 
-            class="w-full rounded-md border border-gray-300 px-3 py-2 text-sm text-gray-900 placeholder-gray-400 focus:border-black focus:outline-none focus:ring-1 focus:ring-black"
-          />
-          <button 
-            type="submit" 
-            class="rounded-md bg-black px-4 py-2 text-sm font-medium text-white hover:bg-gray-800 transition-colors"
-          >
-            Sign up
-          </button>
-        </form>
+    <!-- NAVBAR ENDS -->
+     <main></main>
+    <!-- FOOTER BEGINS -->
+    <footer class="bg-[#f6f6f6] p-4 w-[100%]">
+      <div class="mx-auto mb-14 w-full h-[1px]"></div>
+      <div class="flex flex-row w-full">
+        <div class="w-[30%]">
+          <p class="cormorant-garamond-regular text-[20px] py-4">Daily Cooking Tip</p>
+          <div class="py-0 pl-4 border-l border-l-[3px] border-l-[#9E2B25]">
+            <p class="p-0 text-[14px] font-medium text-black mb-2">The Power of Salt Flushing for Enhanced Flavor</p>
+            <p class="text-[14px] text-[#666]">
+              Before cooking vegetables, try 'salt flushing' them by soaking in a heavily salted brine (1/4 cup salt to 4 cups water) for 15-30 minutes. This process breaks down the cellular structure of the veggies, allowing them to absorb flavors better while also enhancing their natural sweetness and reducing bitterness. Rinse and dry before cooking for an optimal texture and enhanced flavor profile that most home cooks overlook.
+            </p>
+          </div>
+          <div class="px-4 mt-4 text-xs text-[#666]">
+            <p>© nen3rit. 2026. Built in NGN</p>
+          </div>
+        </div>
+        <div class="flex flex-col ml-8 w-[20%] pl-4">
+          <p class="cormorant-garamond-regular text-[20px] py-4">About Dafa</p>
+          <a href="#" class="text-[#666] text-[14px] mb-2 hover:text-black">Roadmap</a>
+          <a href="#" class="text-[#666] text-[14px] mb-2 hover:text-black">Team</a>
+        </div>
+        <div class="flex flex-col w-[20%] pl-4">
+          <p class="cormorant-garamond-regular text-[20px] py-4">Resources</p>
+          <a href="#" class="text-[#666] text-[14px] mb-2 hover:text-black">Terms of Service</a>
+          <a href="#" class="text-[#666] text-[14px] mb-2 hover:text-black">Privacy Policy</a>
+          <a href="#" class="text-[#666] text-[14px] mb-2 hover:text-black">Legal</a>
+        </div>
+        <div class="flex flex-col mx-2 w-[20%] pl-4">
+          <p class="cormorant-garamond-regular text-[20px] py-4">Contact</p>
+          <a href="#" class="text-[#666] text-[14px] mb-2 hover:text-black">Social Media</a>
+          <a href="#" class="text-[#666] text-[14px] mb-2 hover:text-black">Email</a>
+        </div>
+        <div class="flex flex-col mx-2 w-[20%] pl-4">
+          <img src="#" alt="bag of groceries">
+        </div>
       </div>
-
-     
-      <div>
-        <h4 class="font-semibold text-gray-900">About Dafa</h4>
-        <ul class="mt-4 space-y-2">
-          <li><a href="#" class="hover:text-gray-900 transition-colors">Team</a></li>
-          <li><a href="#" class="hover:text-gray-900 transition-colors">Roadmap</a></li>
-          <li><a href="#" class="hover:text-gray-900 transition-colors">Shop</a></li>
-        </ul>
-      </div>
-
-      
-      <div>
-        <h4 class="font-semibold text-gray-900">Resources</h4>
-        <ul class="mt-4 space-y-2">
-          <li><a href="#" class="hover:text-gray-900 transition-colors">Terms of Service</a></li>
-          <li><a href="#" class="hover:text-gray-900 transition-colors">Privacy Policy</a></li>
-          <li><a href="#" class="hover:text-gray-900 transition-colors">Legal</a></li>
-        </ul>
-      </div>
-
-     
-      <div>
-        <h4 class="font-semibold text-gray-900">Contact</h4>
-        <ul class="mt-4 space-y-2">
-          <li><a href="#" class="hover:text-gray-900 transition-colors">Twitter</a></li>
-          <li><a href="#" class="hover:text-gray-900 transition-colors">Instagram</a></li>
-          <li><a href="#" class="hover:text-gray-900 transition-colors">TikTok</a></li>
-          <li><a href="#" class="hover:text-gray-900 transition-colors">Email</a></li>
-        </ul>
-      </div>
-
-    </div>
-
-   
-    <div class="mt-12 border-t border-gray-200 pt-6 flex flex-col items-center justify-between gap-4 sm:flex-row text-xs text-gray-500">
-      <p>© nen3rit. 2026. Built in NGN</p>
-    </div>
+    </footer>
+ <!--FOOTER ENDS  -->
+ <!-- PILL -->
+  <div class="fixed bg-[#f0e4d6] rounded-full backdrop-filter py-4 px-6 z-5 left-[40%] bottom-6">
+    <p class="text-[14px] font-extralight">This website uses cookies. <button class="underline">Accept</button></p>
   </div>
- </footer>  -->
 </body>
 <script src="script.js"></script>
 </html>
