@@ -12,13 +12,16 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="overflow-x-hidden roboto-normal">
-     <!-- NAVBAR STYLING -->
-    <header class="border-b border-[#e5e5e5] bg-white top-0 z-50 sticky shadow-sm">
-        <div class="mx-auto flex justify-between items-center px-6 py-2">
+    <!-- NAVBAR STYLING -->
+    <header class="px-2 border-b border-[#e5e5e5] bg-white top-0 z-50 sticky shadow-sm">
+        <div class="mx-auto flex justify-between items-center py-2">
             <!-- LOGO -->
-            <a href="#">
-                <img src="" alt="logo">
-            </a>
+            <div class="logo-holder flex flex-row">
+              <a href="#" class="w-14 h-auto p-0">
+                <img src="/assets/icons/dafa-logo.png" alt="logo" class="w-12.5 h-auto">
+              </a>
+              <p class="instrument-serif-regular-italic p-0 text-xl mt-1">dafa</p>
+            </div>
             <!-- Navigation -->
             <div class="flex items-center gap-4">
               <nav class="gap-8 text-sm h-full">
@@ -26,37 +29,193 @@
                 <a href="#" class="transition-colors hover:text-gray-600 px-6">Cookbook</a>
                 <a href="#" class="transition-colors hover:text-gray-600 px-6">Log In</a>
               </nav>
-              <button class="rounded-xl border-[1px] border-[#e5e5e5] px-4 py-3 hover:bg-gray-50 transition duration-300 ease-in-out">
+              <button class="rounded-xl border border-[#e5e5e5] px-4 py-3 hover:bg-gray-50 transition duration-300 ease-in-out">
                 <i class="fa-regular fa-lightbulb text-black w-5 h-5"></i>
               </button>
             </div>
         </div>
     </header>
     <!-- NAVBAR ENDS -->
-     <!-- BODY BEGINS -->
-     <main>
+      <!-- BODY BEGINS -->
+      <main class="mx-6">
       <section class="mx-10 pt-16 pb-4 text-center">
         <div class="cormorant-garamond-regular my-4 text-5xl p-2">
           <h1>Discover & save the latest trending recipes.</h1>
           <h1 class="text-[#666]">Here's what others are making for <i>lunch</i> today.</h1>
         </div>
         <div class="my-2 py-2 text-[12px]">
-          <button class="border border-[#dc6c40] text-black px-4 py-3 rounded-2xl bg-linear-to-r from-white to-[#dc6c40]-500 hover:bg-[#dc6c40] hover:text-white transition duration-300"><i class="fa-brands fa-apple text-lg pr-4"></i>Get the app</button>
-          <button class="bg-[#dc6c40] text-white rounded-2xl px-4 py-3 hover:opacity-90 hover:transform hover:scale"><i class="fa-brands fa-google text-lg pr-4"></i>See more recipes</button>
+          <button class="border border-[#4A6B41] text-black px-4 py-3 rounded-2xl bg-linear-to-r from-white to-[#4A6B41]-500 hover:bg-[#4A6B41] hover:text-white transition duration-300"><i class="fa-brands fa-apple text-lg pr-4"></i>Get the app</button>
+          <button class="bg-[#4A6B41] text-white rounded-2xl px-4 py-3 hover:opacity-90 hover:transform hover:scale"><i class="fa-brands fa-google text-lg pr-4"></i>See more recipes</button>
         </div>
         <div class="my-4">
           <p class="text-[#666] text-xs">Already have an account? <a href="#" class="text-black underline">Log in</a></p>
         </div>
       </section>
-     </main>
-     <!-- BODY -->
+      <!-- CARDHOLDER SECTION -->
+      <section class="flex flex-col my-10 p-4">
+        <div class="cardholder w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          <!-- cards -->
+          <div class="rounded-2xl overflow-hidden flex flex-col bg-[#f6f6f6]">
+            <img src="/assets/imgs/recipes/jollof-rice.png" alt="a nice plate of jollof rice" class="w-full h-55 object-cover">
+            <div class="flex px-2 py-1 justify-between items-start flex-1 my-3">
+              <div class="">
+                <p class="cormorant-garamond-regular font-medium text-base p-0">Smokey Jollof Rice</p>
+                <p class= "roboto-normal text-xs text-[#666] py-2">Cook time: 50mins</p>
+              </div>
+              <i class="fa-regular fa-bookmark text-[#666] mt-1 hover:cursor-pointer"></i>
+            </div>
+          </div>
+          <div class="rounded-2xl overflow-hidden flex flex-col bg-[#f6f6f6]">
+            <img src="/assets/imgs/recipes/jollof-rice.png" alt="a nice plate of jollof rice" class="w-full h-55 object-cover">
+            <div class="flex px-2 py-1 justify-between items-start flex-1 my-3">
+              <div class="">
+                <p class="cormorant-garamond-regular font-medium text-base p-0">Smokey Jollof Rice</p>
+                <p class= "roboto-normal text-xs text-[#666] py-2">Cook time: 50mins</p>
+              </div>
+              <i class="fa-regular fa-bookmark text-[#666] mt-1 hover:cursor-pointer"></i>
+            </div>
+          </div>
+          <div class="rounded-2xl overflow-hidden flex flex-col bg-[#f6f6f6]">
+            <img src="/assets/imgs/recipes/jollof-rice.png" alt="a nice plate of jollof rice" class="w-full h-55 object-cover">
+            <div class="flex px-2 py-1 justify-between items-start flex-1 my-3">
+              <div class="">
+                <p class="cormorant-garamond-regular font-medium text-base p-0">Smokey Jollof Rice</p>
+                <p class= "roboto-normal text-xs text-[#666] py-2">Cook time: 50mins</p>
+              </div>
+              <i class="fa-regular fa-bookmark text-[#666] mt-1 hover:cursor-pointer"></i>
+            </div>
+          </div>
+          <div class="rounded-2xl overflow-hidden flex flex-col bg-[#f6f6f6]">
+            <img src="/assets/imgs/recipes/jollof-rice.png" alt="a nice plate of jollof rice" class="w-full h-55 object-cover">
+            <div class="flex px-2 py-1 justify-between items-start flex-1 my-3">
+              <div class="">
+                <p class="cormorant-garamond-regular font-medium text-base p-0">Smokey Jollof Rice</p>
+                <p class= "roboto-normal text-xs text-[#666] py-2">Cook time: 50mins</p>
+              </div>
+              <i class="fa-regular fa-bookmark text-[#666] mt-1 hover:cursor-pointer"></i>
+            </div>
+          </div>
+          <div class="rounded-2xl overflow-hidden flex flex-col bg-[#f6f6f6]">
+            <img src="/assets/imgs/recipes/jollof-rice.png" alt="a nice plate of jollof rice" class="w-full h-55 object-cover">
+            <div class="flex px-2 py-1 justify-between items-start flex-1 my-3">
+              <div class="">
+                <p class="cormorant-garamond-regular font-medium text-base p-0">Smokey Jollof Rice</p>
+                <p class= "roboto-normal text-xs text-[#666] py-2">Cook time: 50mins</p>
+              </div>
+              <i class="fa-regular fa-bookmark text-[#666] mt-1 hover:cursor-pointer"></i>
+            </div>
+          </div>
+          <div class="rounded-2xl overflow-hidden flex flex-col bg-[#f6f6f6]">
+            <img src="/assets/imgs/recipes/jollof-rice.png" alt="a nice plate of jollof rice" class="w-full h-55 object-cover">
+            <div class="flex px-2 py-1 justify-between items-start flex-1 my-3">
+              <div class="">
+                <p class="cormorant-garamond-regular font-medium text-base p-0">Smokey Jollof Rice</p>
+                <p class= "roboto-normal text-xs text-[#666] py-2">Cook time: 50mins</p>
+              </div>
+              <i class="fa-regular fa-bookmark text-[#666] mt-1 hover:cursor-pointer"></i>
+            </div>
+          </div>
+          <div class="rounded-2xl overflow-hidden flex flex-col bg-[#f6f6f6]">
+            <img src="/assets/imgs/recipes/jollof-rice.png" alt="a nice plate of jollof rice" class="w-full h-55 object-cover">
+            <div class="flex px-2 py-1 justify-between items-start flex-1 my-3">
+              <div class="">
+                <p class="cormorant-garamond-regular font-medium text-base p-0">Smokey Jollof Rice</p>
+                <p class= "roboto-normal text-xs text-[#666] py-2">Cook time: 50mins</p>
+              </div>
+              <i class="fa-regular fa-bookmark text-[#666] mt-1 hover:cursor-pointer"></i>
+            </div>
+          </div>
+          <div class="rounded-2xl overflow-hidden flex flex-col bg-[#f6f6f6]">
+            <img src="/assets/imgs/recipes/jollof-rice.png" alt="a nice plate of jollof rice" class="w-full h-55 object-cover">
+            <div class="flex px-2 py-1 justify-between items-start flex-1 my-3">
+              <div class="">
+                <p class="cormorant-garamond-regular font-medium text-base p-0">Smokey Jollof Rice</p>
+                <p class= "roboto-normal text-xs text-[#666] py-2">Cook time: 50mins</p>
+              </div>
+              <i class="fa-regular fa-bookmark text-[#666] mt-1 hover:cursor-pointer"></i>
+            </div>
+          </div>
+          <div class="rounded-2xl overflow-hidden flex flex-col bg-[#f6f6f6]">
+            <img src="/assets/imgs/recipes/jollof-rice.png" alt="a nice plate of jollof rice" class="w-full h-55 object-cover">
+            <div class="flex px-2 py-1 justify-between items-start flex-1 my-3">
+              <div class="">
+                <p class="cormorant-garamond-regular font-medium text-base p-0">Smokey Jollof Rice</p>
+                <p class= "roboto-normal text-xs text-[#666] py-2">Cook time: 50mins</p>
+              </div>
+              <i class="fa-regular fa-bookmark text-[#666] mt-1 hover:cursor-pointer"></i>
+            </div>
+          </div>
+          <div class="rounded-2xl overflow-hidden flex flex-col bg-[#f6f6f6]">
+            <img src="/assets/imgs/recipes/jollof-rice.png" alt="a nice plate of jollof rice" class="w-full h-55 object-cover">
+            <div class="flex px-2 py-1 justify-between items-start flex-1 my-3">
+              <div class="">
+                <p class="cormorant-garamond-regular font-medium text-base p-0">Smokey Jollof Rice</p>
+                <p class= "roboto-normal text-xs text-[#666] py-2">Cook time: 50mins</p>
+              </div>
+              <i class="fa-regular fa-bookmark text-[#666] mt-1 hover:cursor-pointer"></i>
+            </div>
+          </div>
+          <div class="rounded-2xl overflow-hidden flex flex-col bg-[#f6f6f6]">
+            <img src="/assets/imgs/recipes/jollof-rice.png" alt="a nice plate of jollof rice" class="w-full h-55 object-cover">
+            <div class="flex px-2 py-1 justify-between items-start flex-1 my-3">
+              <div class="">
+                <p class="cormorant-garamond-regular font-medium text-base p-0">Smokey Jollof Rice</p>
+                <p class= "roboto-normal text-xs text-[#666] py-2">Cook time: 50mins</p>
+              </div>
+              <i class="fa-regular fa-bookmark text-[#666] mt-1 hover:cursor-pointer"></i>
+            </div>
+          </div>
+          <div class="rounded-2xl overflow-hidden flex flex-col bg-[#f6f6f6]">
+            <img src="/assets/imgs/recipes/jollof-rice.png" alt="a nice plate of jollof rice" class="w-full h-55 object-cover">
+            <div class="flex px-2 py-1 justify-between items-start flex-1 my-3">
+              <div class="">
+                <p class="cormorant-garamond-regular font-medium text-base p-0">Smokey Jollof Rice</p>
+                <p class= "roboto-normal text-xs text-[#666] py-2">Cook time: 50mins</p>
+              </div>
+              <i class="fa-regular fa-bookmark text-[#666] mt-1 hover:cursor-pointer"></i>
+            </div>
+          </div>
+          <div class="rounded-2xl overflow-hidden flex flex-col bg-[#f6f6f6]">
+            <img src="/assets/imgs/recipes/jollof-rice.png" alt="a nice plate of jollof rice" class="w-full h-55 object-cover">
+            <div class="flex px-2 py-1 justify-between items-start flex-1 my-3">
+              <div class="">
+                <p class="cormorant-garamond-regular font-medium text-base p-0">Smokey Jollof Rice</p>
+                <p class= "roboto-normal text-xs text-[#666] py-2">Cook time: 50mins</p>
+              </div>
+              <i class="fa-regular fa-bookmark text-[#666] mt-1 hover:cursor-pointer"></i>
+            </div>
+          </div>
+          <div class="rounded-2xl overflow-hidden flex flex-col bg-[#f6f6f6]">
+            <img src="/assets/imgs/recipes/jollof-rice.png" alt="a nice plate of jollof rice" class="w-full h-55 object-cover">
+            <div class="flex px-2 py-1 justify-between items-start flex-1 my-3">
+              <div class="">
+                <p class="cormorant-garamond-regular font-medium text-base p-0">Smokey Jollof Rice</p>
+                <p class= "roboto-normal text-xs text-[#666] py-2">Cook time: 50mins</p>
+              </div>
+              <i class="fa-regular fa-bookmark text-[#666] mt-1 hover:cursor-pointer"></i>
+            </div>
+          </div>
+          <div class="rounded-2xl overflow-hidden flex flex-col bg-[#f6f6f6]">
+            <img src="/assets/imgs/recipes/jollof-rice.png" alt="a nice plate of jollof rice" class="w-full h-55 object-cover">
+            <div class="flex px-2 py-1 justify-between items-start flex-1 my-3">
+              <div class="">
+                <p class="cormorant-garamond-regular font-medium text-base p-0">Smokey Jollof Rice</p>
+                <p class= "roboto-normal text-xs text-[#666] py-2">Cook time: 50mins</p>
+              </div>
+              <i class="fa-regular fa-bookmark text-[#666] mt-1 hover:cursor-pointer"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      </main>
+      <!-- BODY -->
     <!-- FOOTER BEGINS -->
-    <footer class="bg-[#f6f6f6] p-4 w-[100%]">
-      <div class="mx-auto mb-14 w-full h-[1px]"></div>
+    <footer class="bg-[#f6f6f6] p-4 w-full">
+      <div class="mx-auto mb-14 w-full h-px"></div>
       <div class="flex flex-row w-full">
         <div class="w-[30%]">
           <p class="cormorant-garamond-regular text-[20px] py-4">Daily Cooking Tip</p>
-          <div class="py-0 pl-4 border-l border-l-[3px] border-l-[#9E2B25]">
+          <div class="py-0 pl-4 border-l-[3px] border-l-[#4A6B41]">
             <p class="p-0 text-[14px] font-medium text-black mb-2">The Power of Salt Flushing for Enhanced Flavor</p>
             <p class="text-[14px] text-[#666]">
               Before cooking vegetables, try 'salt flushing' them by soaking in a heavily salted brine (1/4 cup salt to 4 cups water) for 15-30 minutes. This process breaks down the cellular structure of the veggies, allowing them to absorb flavors better while also enhancing their natural sweetness and reducing bitterness. Rinse and dry before cooking for an optimal texture and enhanced flavor profile that most home cooks overlook.
@@ -87,9 +246,9 @@
         </div>
       </div>
     </footer>
- <!--FOOTER ENDS  -->
- <!-- PILL -->
-  <div class="fixed bg-[#f0e4d6]/50 backdrop-blur-md rounded-full backdrop-filter py-4 px-6 z-5 left-[40%] bottom-6">
+  <!--FOOTER ENDS  -->
+  <!-- PILL -->
+  <div class="fixed bg-[#AFD4A5]/40 backdrop-blur-md rounded-full backdrop-filter py-4 px-6 z-5 left-[40%] bottom-6">
     <p class="text-[14px] font-extralight">This website uses cookies. <button class="underline">Accept</button></p>
   </div>
 </body>
